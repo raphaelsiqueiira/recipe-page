@@ -82,6 +82,10 @@ body {
   font-weight: var(--fw-semibold);
 }
 
+hr {
+  border-color: var(--clr-border-table);
+}
+
 .ingredients__item::marker,
 .instructions__item::marker {
   color: var(--clr-list-decoration);
@@ -135,6 +139,31 @@ body {
 @media (max-width: 600px) {
   .container {
     margin: 0;
+    padding: 0;
+    padding-bottom: var(--spacing-7);
     border-radius: 0;
+  }
+
+  .recipe__img {
+    border-radius: 0;
+  }
+
+  .recipe__title,
+  .recipe__description,
+  .ingredients__container,
+  .instructions__container,
+  .nutrition__container {
+    padding-left: var(--spacing-7);
+    padding-right: var(--spacing-7);
+  }
+
+  hr {
+    width: 80%;
+    align-self: center;
+  }
+
+  .prepation__container {
+    margin-left: var(--spacing-7);
+    margin-right: var(--spacing-7);
   }
 }
